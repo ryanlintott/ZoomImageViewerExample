@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		CF0D8C1F25AF57980075FB2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D8C1E25AF57980075FB2A /* ContentView.swift */; };
 		CF0D8C2125AF57980075FB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0D8C2025AF57980075FB2A /* Assets.xcassets */; };
 		CF0D8C2425AF57980075FB2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0D8C2325AF57980075FB2A /* Preview Assets.xcassets */; };
+		CF0D8C2E25AF58100075FB2A /* ZoomImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = CF0D8C2D25AF58100075FB2A /* ZoomImageViewer */; };
+		CF0D8C3525AF58600075FB2A /* TapToFullscreenImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D8C3425AF58600075FB2A /* TapToFullscreenImageScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		CF0D8C2025AF57980075FB2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF0D8C2325AF57980075FB2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF0D8C2525AF57980075FB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0D8C3425AF58600075FB2A /* TapToFullscreenImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToFullscreenImageScrollView.swift; sourceTree = "<group>"; };
+		CFE10973263B20AE00697DB3 /* ZoomImageViewer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ZoomImageViewer; path = ../../ZoomImageViewer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0D8C2E25AF58100075FB2A /* ZoomImageViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				CF0D8C1C25AF57980075FB2A /* ZoomImageViewerExampleApp.swift */,
 				CF0D8C1E25AF57980075FB2A /* ContentView.swift */,
+				CF0D8C3425AF58600075FB2A /* TapToFullscreenImageScrollView.swift */,
+				CFE10973263B20AE00697DB3 /* ZoomImageViewer */,
 				CF0D8C2025AF57980075FB2A /* Assets.xcassets */,
 				CF0D8C2525AF57980075FB2A /* Info.plist */,
 				CF0D8C2225AF57980075FB2A /* Preview Content */,
@@ -85,6 +92,9 @@
 			dependencies = (
 			);
 			name = ZoomImageViewerExample;
+			packageProductDependencies = (
+				CF0D8C2D25AF58100075FB2A /* ZoomImageViewer */,
+			);
 			productName = ZoomImageViewerExample;
 			productReference = CF0D8C1925AF57980075FB2A /* ZoomImageViewerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +122,9 @@
 				Base,
 			);
 			mainGroup = CF0D8C1025AF57980075FB2A;
+			packageReferences = (
+				CF0D8C2C25AF58100075FB2A /* XCRemoteSwiftPackageReference "ZoomImageViewer" */,
+			);
 			productRefGroup = CF0D8C1A25AF57980075FB2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0D8C3525AF58600075FB2A /* TapToFullscreenImageScrollView.swift in Sources */,
 				CF0D8C1F25AF57980075FB2A /* ContentView.swift in Sources */,
 				CF0D8C1D25AF57980075FB2A /* ZoomImageViewerExampleApp.swift in Sources */,
 			);
@@ -328,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF0D8C2C25AF58100075FB2A /* XCRemoteSwiftPackageReference "ZoomImageViewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ryanlintott/ZoomImageViewer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF0D8C2D25AF58100075FB2A /* ZoomImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF0D8C2C25AF58100075FB2A /* XCRemoteSwiftPackageReference "ZoomImageViewer" */;
+			productName = ZoomImageViewer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF0D8C1125AF57980075FB2A /* Project object */;
 }

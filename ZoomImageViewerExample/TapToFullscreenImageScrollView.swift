@@ -1,0 +1,61 @@
+//
+//  TapToFullscreenImageScrollView.swift
+//  ZoomImageViewerExample
+//
+//  Created by Ryan Lintott on 2020-11-17.
+//
+
+import SwiftUI
+import ZoomImageViewer
+
+struct TapToFullscreenImageScrollView: View {
+    @State private var isShowingFullScreen = false
+    @State private var uiImage: UIImage? = nil
+    
+    let smallImage = UIImage(named: "testImage")!
+    
+    var body: some View {
+        GeometryReader { proxy in
+            HStack(alignment: .center) {
+                Spacer(minLength: 0)
+                ScrollView {
+                    VStack(alignment: .center) {
+                        ForEach(0...20, id: \.self) {
+                            Text("\($0)")
+                        }
+                        
+                        Text("Here is an image")
+                        
+                        Image(uiImage: smallImage)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 200)
+                            .onTapGesture {
+                                uiImage = smallImage
+                            }
+                        
+                        Button {
+                            uiImage = nil
+                            isShowingFullScreen = true
+                        } label: {
+                            Text("Turn off image")
+                        }
+                    }
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .background(Color.green.opacity(0.5))
+        .padding(50)
+        .overlay(
+            ZoomImageViewer(uiImage: $uiImage)
+                .rotationMatchingOrientation()
+        )
+    }
+}
+
+struct TapToFullscreenImageScrollView_Previews: PreviewProvider {
+    static var previews: some View {
+        TapToFullscreenImageScrollView()
+    }
+}
