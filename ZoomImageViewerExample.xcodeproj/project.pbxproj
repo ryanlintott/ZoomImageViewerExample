@@ -23,7 +23,7 @@
 		CF0D8C2325AF57980075FB2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF0D8C2525AF57980075FB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0D8C3425AF58600075FB2A /* TapToFullscreenImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToFullscreenImageScrollView.swift; sourceTree = "<group>"; };
-		CFE10973263B20AE00697DB3 /* ZoomImageViewer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ZoomImageViewer; path = ../../ZoomImageViewer; sourceTree = "<group>"; };
+		CF4D361226541A0D001D5F2A /* ZoomImageViewer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ZoomImageViewer; path = ../ZoomImageViewer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,7 @@
 		CF0D8C1025AF57980075FB2A = {
 			isa = PBXGroup;
 			children = (
+				CF4D361226541A0D001D5F2A /* ZoomImageViewer */,
 				CF0D8C1B25AF57980075FB2A /* ZoomImageViewerExample */,
 				CF0D8C1A25AF57980075FB2A /* Products */,
 			);
@@ -60,7 +61,6 @@
 				CF0D8C1C25AF57980075FB2A /* ZoomImageViewerExampleApp.swift */,
 				CF0D8C1E25AF57980075FB2A /* ContentView.swift */,
 				CF0D8C3425AF58600075FB2A /* TapToFullscreenImageScrollView.swift */,
-				CFE10973263B20AE00697DB3 /* ZoomImageViewer */,
 				CF0D8C2025AF57980075FB2A /* Assets.xcassets */,
 				CF0D8C2525AF57980075FB2A /* Info.plist */,
 				CF0D8C2225AF57980075FB2A /* Preview Content */,

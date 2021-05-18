@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ZoomImageViewer",
+        "repositoryURL": "https://github.com/ryanlintott/ZoomImageViewer.git",
+        "state": {
+          "branch": "main",
+          "revision": "c4516fb04a95651b795a0054f779f715648ed813",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
