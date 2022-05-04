@@ -25,6 +25,8 @@ struct TapToFullscreenImageScrollView: View {
                         }
                         
                         Text("Here is an image")
+                            .rotationMatchingOrientation([.landscapeRight])
+                            .frame(width: 100, height: 100)
                         
                         Image(uiImage: smallImage)
                             .resizable()
