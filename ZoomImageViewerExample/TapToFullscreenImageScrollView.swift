@@ -5,6 +5,7 @@
 //  Created by Ryan Lintott on 2020-11-17.
 //
 
+import FrameUp
 import SwiftUI
 import ZoomImageViewer
 
@@ -23,10 +24,6 @@ struct TapToFullscreenImageScrollView: View {
                         ForEach(0...20, id: \.self) {
                             Text("\($0)")
                         }
-                        
-                        Text("Here is an image")
-                            .rotationMatchingOrientation([.landscapeRight])
-                            .frame(width: 100, height: 100)
                         
                         Image(uiImage: smallImage)
                             .resizable()
@@ -51,6 +48,7 @@ struct TapToFullscreenImageScrollView: View {
         .padding(50)
         .overlay(
             ZoomImageViewer(uiImage: $uiImage)
+                /// This modifier is from FrameUp and is optional
                 .rotationMatchingOrientation()
         )
     }
