@@ -47,9 +47,10 @@ struct TapToFullscreenImageScrollView: View {
         .background(Color.green.opacity(0.5))
         .padding(50)
         .overlay(
-            ZoomImageViewer(uiImage: $uiImage)
-                /// This modifier is from FrameUp and is optional
-                .rotationMatchingOrientation()
+            /// Auto rotating modifier is from FrameUp and is optional
+            AutoRotatingView {
+                ZoomImageViewer(uiImage: $uiImage)
+            }
         )
     }
 }
