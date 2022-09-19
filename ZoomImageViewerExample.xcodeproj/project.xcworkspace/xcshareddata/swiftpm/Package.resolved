@@ -5,9 +5,9 @@
         "package": "FrameUp",
         "repositoryURL": "https://github.com/ryanlintott/FrameUp",
         "state": {
-          "branch": "dev",
-          "revision": "357898fb4e32e0e35be0f132f1a47f3424fbdae5",
-          "version": null
+          "branch": null,
+          "revision": "ac6a39f5c22e3c9c1c26fab9ed00a7ef2070fc74",
+          "version": "0.4.0"
         }
       }
     ]
