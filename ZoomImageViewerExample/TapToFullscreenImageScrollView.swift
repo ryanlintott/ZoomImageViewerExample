@@ -28,6 +28,7 @@ struct TapToFullscreenImageScrollView: View {
                         Image(uiImage: smallImage)
                             .resizable()
                             .scaledToFit()
+                            .accessibilityIgnoresInvertColors()
                             .frame(width: 200)
                             .onTapGesture {
                                 uiImage = smallImage
