@@ -22,7 +22,7 @@ struct TapToFullscreenImageScrollView: View {
                 ScrollView {
                     VStack(alignment: .center) {
                         ForEach(0...20, id: \.self) {
-                            Text("\($0)")
+                            Text("Content \($0)")
                         }
                         
                         Image(uiImage: smallImage)
@@ -34,12 +34,12 @@ struct TapToFullscreenImageScrollView: View {
                                 uiImage = smallImage
                             }
                         
-                        Button {
-                            uiImage = nil
-                            isShowingFullScreen = true
-                        } label: {
-                            Text("Turn off image")
-                        }
+//                        Button {
+//                            uiImage = nil
+//                            isShowingFullScreen = true
+//                        } label: {
+//                            Text("Turn off image")
+//                        }
                     }
                 }
                 Spacer(minLength: 0)
