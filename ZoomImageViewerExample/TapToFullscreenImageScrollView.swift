@@ -50,7 +50,7 @@ struct TapToFullscreenImageScrollView: View {
         .overlay(
             /// Auto rotating modifier is from FrameUp and is optional
             AutoRotatingView {
-                ZoomImageViewer(uiImage: $uiImage)
+                ZoomImageView(uiImage: $uiImage)
             }
         )
     }
